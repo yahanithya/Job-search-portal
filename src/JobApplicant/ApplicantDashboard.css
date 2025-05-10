@@ -1,0 +1,110 @@
+/* Container for the dashboard */
+.dashboard-container {
+    display: flex; /* Use flexbox to align sidebar and content side by side */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevent scrolling issues */
+    flex-direction: column; /* Allow navigation bar to stack above the content */
+}
+
+/* Navigation bar styling */
+.navbar {
+    width: 100%; /* Full width */
+    height: 80px; /* Adjust height as needed */
+    background-color: #007bff; /* Blue background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed; /* Keep it at the top */
+    top: 0;
+    left: 0;
+    z-index: 1100; /* Ensure it appears above the sidebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 0 0 250px; /* Fixed width for the sidebar */
+    height: calc(100vh - 60px); /* Adjust height to account for the navbar */
+    position: fixed; /* Keep the sidebar fixed */
+    top: 60px; /* Push it below the navbar */
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Main content area */
+.dashboard-content {
+    margin-left: 250px; /* Add margin to account for the sidebar width */
+    margin-top: 60px; /* Add margin to account for the navbar height */
+    flex: 1; /* Take the remaining space */
+    padding: 20px; /* Add some padding for spacing */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Welcome message styling */
+.welcome-message {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message span {
+    font-weight: bold;
+    color: #f092c9; /* Blue color for username */
+}
+
+.welcome-message h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #333;
+}
+
+.welcome-message p {
+    margin: 10px 0;
+    font-size: 30px;
+    color: #555;
+}
+
+/* Main content area styling */
+.main-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.stat-card p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}

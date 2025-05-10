@@ -1,0 +1,91 @@
+/* Container for the Add Jobs form */
+.add-jobs-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Form heading */
+  .add-jobs-container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form fields */
+  .add-jobs-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .add-jobs-container label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .add-jobs-container input,
+  .add-jobs-container textarea,
+  .add-jobs-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-jobs-container input:focus,
+  .add-jobs-container textarea:focus,
+  .add-jobs-container select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Textarea styling */
+  .add-jobs-container textarea {
+    resize: none;
+  }
+  
+  /* File input styling */
+  .add-jobs-container input[type="file"] {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  
+  /* Submit button */
+  .add-jobs-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-jobs-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-jobs-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error messages (optional) */
+  .add-jobs-container .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }

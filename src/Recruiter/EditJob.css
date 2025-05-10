@@ -1,0 +1,93 @@
+.edit-job-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.edit-job-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-job-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-job-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.edit-job-container input,
+.edit-job-container textarea,
+.edit-job-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.edit-job-container input:focus,
+.edit-job-container textarea:focus,
+.edit-job-container select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-job-container textarea {
+  resize: vertical;
+}
+
+.edit-job-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-job-container button:hover {
+  background-color: #0056b3;
+}
+
+.edit-job-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.edit-job-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-job-container .form-group.error input,
+.edit-job-container .form-group.error textarea,
+.edit-job-container .form-group.error select {
+  border-color: #dc3545;
+}
+
+.edit-job-container .form-group.error label {
+  color: #dc3545;
+}
+
+.edit-job-container .form-group.error .error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}

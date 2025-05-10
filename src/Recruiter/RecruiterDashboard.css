@@ -1,0 +1,150 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+    display: flex; /* Use flexbox to align sidebar and content side by side */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 350px; /* Fixed width for the sidebar */
+    background-color: #333; /* Dark gray for recruiter sidebar */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Ensure the sidebar stays fixed */
+    height: 100vh; /* Full height for the sidebar */
+    z-index: 1000; /* Ensure the sidebar is above other elements */
+}
+
+/* Sidebar links */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #ffc107; /* Highlight links on hover */
+}
+
+/* Main content area */
+.dashboard-content {
+    flex: 1; /* Allow the main content to take the remaining space */
+    margin-left: 250px; /* Push the content to the right to avoid overlap */
+    padding: 50px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Welcome message styling */
+.welcome-message {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message span {
+    color: #007BFF;
+}
+
+.welcome-message h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #333;
+}
+
+.welcome-message p {
+    margin: 10px 0;
+    font-size: 30px;
+    color: #555;
+}
+
+/* Main content styling */
+.main-content {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats container styling */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background-color: #87b8ea;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 1.2rem;
+    color: #e17f7f;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #a4c9f0;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: #8ebfe4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.stat-card p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        position: relative; /* Sidebar becomes inline for smaller screens */
+        height: auto;
+    }
+
+    .dashboard-content {
+        margin-left: 10; /* Remove margin for smaller screens */
+        padding: 10px;
+    }
+}
